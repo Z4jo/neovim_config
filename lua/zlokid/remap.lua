@@ -9,23 +9,12 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
-
-vim.keymap.set("n", "<leader>vwm", function()
-	    require("vim-with-me").StartVimWithMe()
-    end)
-    vim.keymap.set("n", "<leader>svwm", function()
-	        require("vim-with-me").StopVimWithMe()
-	end)
-vim.keymap.set("n", "<C-t>",function()
-        vim.cmd(":NvimTreeToggle") 
-end)
-vim.keymap.set("n","<C-c>",function() vim.cmd(":NvimTreeClose")
-end)
 vim.keymap.set("n","<leader>s", function() vim.cmd(":vsplit") end)
 vim.keymap.set("n","<leader>c", function() vim.cmd(":close") end)
+vim.keymap.set("n","j","jzz",{ noremap=true})
+vim.keymap.set("n","k","kzz",{ noremap=true})
 
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+
 	-- greatest remap ever
     -- 
 	-- vim.keymap.set("x", "<leader>p", [["_dP]])

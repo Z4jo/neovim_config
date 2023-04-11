@@ -15,7 +15,6 @@ return require('packer').startup(function(use)
         use("theprimeagen/harpoon")
         use("mbbill/undotree")
         use("tpope/vim-fugitive")
-        use("prichrd/netrw.nvim")
         use {
                 'VonHeikemen/lsp-zero.nvim',
                 branch = 'v1.x',
@@ -39,10 +38,8 @@ return require('packer').startup(function(use)
                         {'rafamadriz/friendly-snippets'},
                 }
         }
-
+        use ("prichrd/netrw.nvim")
         use("folke/zen-mode.nvim")
-        use("github/copilot.vim")
-        use("laytan/cloak.nvim")
         use("nvim-lua/plenary.nvim")
         use {
                 "startup-nvim/startup.nvim",
