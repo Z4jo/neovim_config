@@ -1,2 +1,4 @@
 # neovim_config
-Basic plugins for neovim
+Basic plugins and settings for neovim
+## Plugins:
+TODO:
