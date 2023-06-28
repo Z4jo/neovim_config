@@ -8,14 +8,41 @@ return require('packer').startup(function(use)
                 -- or                            , branch = '0.1.x',
                 requires = { {'nvim-lua/plenary.nvim'} }
         }
-
+        use {"lukas-reineke/indent-blankline.nvim"}
+        use {"hrsh7th/cmp-nvim-lsp"}
+        use 'hrsh7th/cmp-buffer'
+        use 'hrsh7th/cmp-path'
+        use 'hrsh7th/cmp-cmdline'
+        use 'hrsh7th/nvim-cmp'
+        use {'navarasu/onedark.nvim'}
         use { "catppuccin/nvim", as = "catppuccin" } 
-        use( 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-        use ( 'nvim-treesitter/playground')
+        use {'nyoom-engineering/oxocarbon.nvim'}
+        use ("savq/melange-nvim")
+        use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+        use ('nvim-treesitter/playground')
         use("theprimeagen/harpoon")
         use("mbbill/undotree")
         use("tpope/vim-fugitive")
+        use {"shortcuts/no-neck-pain.nvim", tag = "*" }
         use {
+                "ThePrimeagen/refactoring.nvim",
+                requires = {
+                        {"nvim-lua/plenary.nvim"},
+                        {"nvim-treesitter/nvim-treesitter"}
+                }
+        }
+        use {
+                "AmeerTaweel/todo.nvim",
+                requires = "nvim-lua/plenary.nvim",
+                config = function()
+                        require("todo").setup {
+                                -- your configuration comes here
+                                -- or leave it empty to use the default settings
+                                -- refer to the configuration section below
+                        }
+                end
+        }
+                use {
                 'VonHeikemen/lsp-zero.nvim',
                 branch = 'v1.x',
                 requires ={
@@ -42,14 +69,8 @@ return require('packer').startup(function(use)
         use("folke/zen-mode.nvim")
         use("nvim-lua/plenary.nvim")
         use {
-                "startup-nvim/startup.nvim",
-                requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
-                config = function()
-                        require"startup".setup({theme= evil})
-                end
-        }
-        use {
                 'nvim-lualine/lualine.nvim',
                 requires = { 'nvim-tree/nvim-web-devicons', opt = true }
         }
+        use ('lervag/vimtex')
 end)

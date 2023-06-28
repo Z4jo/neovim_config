@@ -12,6 +12,8 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.updatetime = 50
-vim.opt.colorcolumn = "80" 
+vim.opt.colorcolumn = "0" 
 vim.g.mapleader = " " 
 vim.opt.guicursor = ""
+vim.opt.swapfile = false
+vim.opt.backup = false
