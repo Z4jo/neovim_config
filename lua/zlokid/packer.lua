@@ -9,8 +9,13 @@ return require('packer').startup(function(use)
                 requires = { {'nvim-lua/plenary.nvim'} }
         }
         use {"lukas-reineke/indent-blankline.nvim"}
+		use 'mfussenegger/nvim-dap'
+		use 'leoluz/nvim-dap-go'
+		use "folke/neodev.nvim"
+		use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
         use {"hrsh7th/cmp-nvim-lsp"}
         use 'hrsh7th/cmp-buffer'
+        use { "bluz71/vim-moonfly-colors", as = "moonfly" }
         use 'hrsh7th/cmp-path'
         use 'hrsh7th/cmp-cmdline'
         use 'hrsh7th/nvim-cmp'

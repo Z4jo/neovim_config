@@ -20,4 +20,7 @@ require'netrw'.setup{
   mappings = {}, -- Custom key mappings
 }
 
+vim.g.moonflyUnderlineMatchParen = true
+vim.opt.fillchars = { horiz = '━', horizup = '┻', horizdown = '┳', vert = '┃', vertleft = '┫', vertright = '┣', verthoriz = '╋', }
+
 

@@ -154,6 +154,16 @@ _G.packer_plugins = {
     path = "/home/zlokid/.local/share/nvim/site/pack/packer/start/melange-nvim",
     url = "https://github.com/savq/melange-nvim"
   },
+  moonfly = {
+    loaded = true,
+    path = "/home/zlokid/.local/share/nvim/site/pack/packer/start/moonfly",
+    url = "https://github.com/bluz71/vim-moonfly-colors"
+  },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "/home/zlokid/.local/share/nvim/site/pack/packer/start/neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
+  },
   ["netrw.nvim"] = {
     loaded = true,
     path = "/home/zlokid/.local/share/nvim/site/pack/packer/start/netrw.nvim",
@@ -168,6 +178,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/zlokid/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/zlokid/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-go"] = {
+    loaded = true,
+    path = "/home/zlokid/.local/share/nvim/site/pack/packer/start/nvim-dap-go",
+    url = "https://github.com/leoluz/nvim-dap-go"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/home/zlokid/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
   },
   ["nvim-lspconfig"] = {
     loaded = true,

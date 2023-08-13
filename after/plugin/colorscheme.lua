@@ -1,6 +1,7 @@
+--[[
 require('onedark').setup  {
     -- Main options --
-    style = 'deep', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+    style = 'warmer', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
     transparent = false,  -- Show/hide background
     term_colors = true, -- Change terminal color as per the selected theme style
     ending_tildes = false, -- Show the end-of-buffer tildes. By default they are hidden
@@ -14,7 +15,7 @@ require('onedark').setup  {
     -- Options are italic, bold, underline, none
     -- You can configure multiple style with comma separated, For e.g., keywords = 'italic,bold'
     code_style = {
-        comments = 'italic',
+        comments = 'bold',
         keywords = 'none',
         functions = 'none',
         strings = 'none',
@@ -38,6 +39,14 @@ require('onedark').setup  {
     },
 }
 require('onedark').load()
+--]]
+--moonfly
+vim.cmd [[colorscheme moonfly]]
+vim.g.moonflyUnderlineMatchParen = true
+vim.opt.fillchars = { horiz = '━', horizup = '┻', horizdown = '┳', vert = '┃', vertleft = '┫', vertright = '┣', verthoriz = '╋', }
+vim.g.moonflyCursorColor = true
+vim.g.moonflyVirtualTextColor = true
+
 --   vim.opt.background = "dark" 
 --    vim.cmd.colorscheme "oxocarbon"
 --    vim.cmd.colorscheme 'melange'
